@@ -10,3 +10,4 @@ export { Cross } from './shapes/cross';
 export { SquareDonut } from './shapes/squareDonut';
 export { Arrow } from './shapes/arrow';
 export { Message } from './shapes/message';
+export { default as Cloud } from './shapes/cloudshape';

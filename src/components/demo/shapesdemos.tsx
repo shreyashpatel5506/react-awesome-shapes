@@ -12,7 +12,8 @@ import {
   scope,
   squareDonutExample,
   starExample,
-  heartExample
+  heartExample,
+  cloudExample
 } from '../../constants/shapes.constant';
 import { LiveEdit } from '../common/liveedit';
 
@@ -31,6 +32,7 @@ export const ShapesDemos = () => {
       <LiveEdit code={arrowExample} scope={scope} />
       <LiveEdit code={messageExample} scope={scope} />
       <LiveEdit code={heartExample} scope={scope} />
+      <LiveEdit code={cloudExample} scope={scope} />
     </div>
   );
 };

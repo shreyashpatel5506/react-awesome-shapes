@@ -12,7 +12,8 @@ import {
   SquareDonut,
   Arrow,
   Message,
-  Heart
+  Heart,
+  Cloud
 } from '../lib';
 
 export const scope = {
@@ -27,7 +28,8 @@ export const scope = {
   SquareDonut,
   Arrow,
   Message,
-  Heart
+  Heart,
+  Cloud
 };
 
 export const circleExample = `<Circle
@@ -115,6 +117,14 @@ export const messageExample = `<Message
     height="150px"
     width="180px"
     zIndex={2}
+/>
+`;
+
+export const cloudExample = `<Cloud
+  width="220px"
+  height="120px"
+  color="linear-gradient(135deg, #c7d2fe, #a5b4fc)"
+  zIndex={2}
 />
 `;
 
