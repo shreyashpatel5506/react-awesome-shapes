@@ -23,7 +23,7 @@
   "plugins": ["react", "@typescript-eslint"],
   "rules": {
     "import/extensions": 0,
-
+    "react/no-unknown-property": ["error", { "ignore": ["sx"] }],
     "import/no-named-as-default-member": 0,
     "react/prop-types": 1,
     "react/display-name": 0,
