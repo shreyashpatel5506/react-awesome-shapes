@@ -1,26 +1,35 @@
 import React from 'react';
 
 interface CloudProps {
-  width?: number | string;
-  height?: number | string;
+  width?: string | string[];
+  height?: string | string[];
   color?: string;
   zIndex?: string;
 }
+
+const resolveResponsiveValue = (
+  value?: string | string[]
+): string | undefined => {
+  if (Array.isArray(value)) {
+    return value[0];
+  }
+  return value;
+};
 
 const Cloud: React.FC<CloudProps> = ({
   width = '220px',
   height = '120px',
   color = '#E5E7EB',
-  zIndex = "-1"
+  zIndex = '1'
 }) => {
   return (
     <svg
       aria-label="Minimal flat cloud shape"
-      height={height}
+      height={resolveResponsiveValue(height)}
       role="img"
       style={{ zIndex }}
       viewBox="0 0 220 120"
-      width={width}
+      width={resolveResponsiveValue(width)}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
