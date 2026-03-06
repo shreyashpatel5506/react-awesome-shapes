@@ -4,14 +4,14 @@ interface CloudProps {
   width?: number | string;
   height?: number | string;
   color?: string;
-  zIndex?: number;
+  zIndex?: string;
 }
 
 const Cloud: React.FC<CloudProps> = ({
   width = '220px',
   height = '120px',
   color = '#E5E7EB',
-  zIndex = 1
+  zIndex = "-1"
 }) => {
   return (
     <svg
