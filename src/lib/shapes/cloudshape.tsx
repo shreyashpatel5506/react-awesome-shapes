@@ -7,12 +7,11 @@ interface CloudProps {
   zIndex?: string;
 }
 
-const resolveResponsiveValue = (
-  value?: string | string[]
-): string | undefined => {
+const resolveResponsiveValue = (value?: string | string[]): string | undefined => {
   if (Array.isArray(value)) {
     return value[0];
   }
+
   return value;
 };
 
@@ -51,4 +50,4 @@ const Cloud: React.FC<CloudProps> = ({
   );
 };
 
-export default Cloud;
+export { Cloud };

@@ -38,7 +38,7 @@ const config = {
               }
             ]
           ],
-          plugins: ['@babel/proposal-class-properties', '@babel/proposal-object-rest-spread']
+          plugins: ['@babel/plugin-proposal-class-properties']
         }
       },
       {
